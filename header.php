@@ -64,6 +64,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="appointment.php"> Appointment </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link logincolor" href="login.php"> Login </a>
+                            </li>
                         </ul>
                         <form class="form-inline ">
                             <button class="btn nav_search-btn" type="submit">

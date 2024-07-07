@@ -789,6 +789,10 @@ a:focus {
 .error{
   color: red;
 }
+.logincolor{
+  background-color: green;
+  padding: 30px 10px;
+}
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */

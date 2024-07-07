@@ -14,6 +14,9 @@
 
 </script>
 <!-- End Google Map -->
+<!-- google captcha start -->
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<!-- google captcha start -->
 </body>
 
 </html>
