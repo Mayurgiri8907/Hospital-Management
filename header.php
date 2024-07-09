@@ -65,7 +65,7 @@
                                 <a class="nav-link" href="appointment.php"> Appointment </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link logincolor" href="login.php"> Login </a>
+                                <a class="nav-link logincolor" href="registration.php">registration</a>
                             </li>
                         </ul>
                         <form class="form-inline ">
