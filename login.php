@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en" dir="ltr">
@@ -10,7 +11,7 @@
 <body>
   <div class="wrapper">
     <h2>login</h2>
-    <form action="login_validation.php" methd="post">
+    <form action="login_validation.php" method="post">
       <div class="input-box">
         <input type="text" placeholder="Enter your email" name="email" required>
       </div>
@@ -18,7 +19,10 @@
         <input type="password" placeholder="Create password" name="password" required>
       </div>
       <div class="input-box button">
-        <input type="Submit" value="Register Now">
+        <input type="Submit" value="Register Now" name="loginsubmit">
+      </div>
+      <div class="text">
+        <h3>you have not account? <a href="registration.php">Login now</a></h3>
       </div>
     </form>
   </div>

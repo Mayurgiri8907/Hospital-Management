@@ -1,3 +1,9 @@
+<?php 
+      @session_start();
+      if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
+        header("location:login.php");
+      }
+?>
 <section class="special_section">
     <div class="container">
         <div class="special_container">

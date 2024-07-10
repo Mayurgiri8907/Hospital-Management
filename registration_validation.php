@@ -7,7 +7,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         $cpassword = $_POST['cpassword'];
-        $name_query = "select * from registration where name = '$name'";
+        $name_query = "select email from registration where email = '$email'";
         $nameresult = mysqli_query($conn,$name_query);
 
         if(mysqli_num_rows($nameresult) != 0){

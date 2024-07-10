@@ -1,4 +1,10 @@
-<?php include("conn.php"); ?>
+<?php 
+    @session_start();
+    if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
+      header("location:login.php");
+    }
+    include("conn.php"); 
+?>
 
 <section class=" slider_section position-relative">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

@@ -1,6 +1,13 @@
   <!-- end header section -->
    
-    <?php include("header.php"); ?>
+    <?php 
+      @session_start();
+      if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
+        header("location:login.php");
+      } 
+      include("header.php");
+    
+    ?>
 
   <!-- end header section -->
     <!-- slider section -->

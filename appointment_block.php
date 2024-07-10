@@ -1,5 +1,8 @@
 <?php
-
+    @session_start();
+    if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
+      header("location:login.php");
+    }
      //$frmname = $frmdoctorname = $frmdepartmentname = $frmphone = $frmsymptoms = $frmdate = "";
      $frmerrormsg = "";
     //  $frmname = $frmdoctorname = $frmdepartmentname = $frmphone = $frmsymptoms = $frmdate ="";

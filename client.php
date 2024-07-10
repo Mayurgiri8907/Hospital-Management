@@ -1,4 +1,10 @@
-<?php include("conn.php"); ?>
+<?php 
+    @session_start();
+    if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
+      header("location:login.php");
+    }
+    include("conn.php"); 
+?>
 
 <section class="client_section layout_padding">
     <div class="container">
