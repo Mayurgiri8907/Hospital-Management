@@ -1,8 +1,10 @@
 <?php
+    
     @session_start();
     if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
-      header("location:login.php");
+        header("location:registration.php");
     }
+
      //$frmname = $frmdoctorname = $frmdepartmentname = $frmphone = $frmsymptoms = $frmdate = "";
      $frmerrormsg = "";
     //  $frmname = $frmdoctorname = $frmdepartmentname = $frmphone = $frmsymptoms = $frmdate ="";
@@ -75,7 +77,6 @@ function test_input($data) {
   
 
 ?>
-
 <section class="book_section layout_padding">
     <div class="container">
         <div class="row">

@@ -1,40 +1,34 @@
-
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - codingnepalweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Registration or Sign Up form in HTML CSS | CodingLab </title> 
-    <link rel="stylesheet" href="css\registration.css">
-   </head>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css_login.css">
+</head>
 <body>
-  <div class="wrapper">
-    <h2>Registration</h2>
-    <form action="registration_validation.php" method="post">
-      <div class="input-box">
-        <input type="text" placeholder="Enter your name" name="name">
-      </div>
-      <div class="input-box">
-        <input type="text" placeholder="Enter your email" name="email">
-      </div>
-      <div class="input-box">
-        <input type="password" placeholder="Create password" name="password">
-      </div>
-      <div class="input-box">
-        <input type="password" placeholder="Confirm password" name="cpassword">
-      </div>
-      <div class="policy">
-        <input type="checkbox">
-        <h3>I accept all terms & condition</h3>
-      </div>
-      <div class="input-box button">
-        <input type="Submit" value="Register Now" name="rsubmit">
-      </div>
-      <div class="text">
-        <h3>Already have an account? <a href="login.php">Login now</a></h3>
-      </div>
-    </form>
-  </div>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form action="registration_validation.php" method="post">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="name" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="password" placeholder="password" required="">
+					<input type="password" name="cpassword" placeholder="conform Password" required="">
+					<button name="singup">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action="login_validation.php" method="post">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="name" name="email" placeholder="Email OR Name" required="">
+					<input type="password" name="password" placeholder="Password" required="">
+					<button name="login">Login</button>
+				</form>
+			</div>
+	</div>
 </body>
 </html>

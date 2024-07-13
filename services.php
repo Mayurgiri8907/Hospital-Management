@@ -1,7 +1,8 @@
 <?php
+
     @session_start();
     if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
-      header("location:login.php");
+        header("location:registration.php");
     }
     include("header.php"); 
 ?>

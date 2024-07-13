@@ -1,8 +1,10 @@
 <?php 
-      @session_start();
-      if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
-        header("location:login.php");
-      }
+
+  @session_start();
+  if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
+      header("location:registration.php");
+  }
+    
 ?>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.js"></script>

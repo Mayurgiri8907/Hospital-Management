@@ -1,8 +1,9 @@
-<?php 
-      @session_start();
-      if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
-        header("location:login.php");
-      }
+<?php
+    @session_start();
+    if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
+        header("location:registration.php");
+    }
+
 ?>
 <section class="special_section">
     <div class="container">

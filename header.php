@@ -1,10 +1,10 @@
-<?php 
-      @session_start();
-      if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
-        header("location:login.php");
-      }
-?>
+<?php
+    @session_start();
+    if(!isset($_SESSION['name']) && $_SESSION['name'] == ""){
+        header("location:registration.php");
+    }
 
+?>
 <!DOCTYPE html>
 <html>
 
@@ -71,14 +71,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="appointment.php"> Appointment </a>
                             </li>
-                            <?php 
-                                
-                                if(isset($_SESSION['name']) && $_SESSION['name']){
-                                    echo '<li class="nav-item">
-                                            <a class="nav-link logincolor" href="logout.php">Logout</a>
-                                        </li>';
-                                }
-                            ?>
+                            <li class="nav-item">
+                                <a class="nav-link logincolor" href="registration.php"><?php echo $_SESSION['name']; ?></a>
+                            </li>
+                             
+                            
                             
                         </ul>
                         <form class="form-inline ">
